@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAЯPS — Mars Astronaut Route Planning &amp; Simulation</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/mission-view.css">
+  <link rel="stylesheet" href="css/map-view.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- Fixed left sidebar. The five entries are created by js/navigation.js -->
+    <aside id="sidebar">
+      <div class="sidebar-brand">
+        <span class="brand-name">MAЯPS</span>
+        <span class="brand-sub">Acidalia Planitia</span>
+      </div>
+      <nav id="sidebar-nav" aria-label="Main navigation"></nav>
+      <div class="sidebar-footer">Mission data is kept in memory only. Export it to keep it.</div>
+    </aside>
+
+    <div id="content">
+
+      <!-- Mission bar: visible while a mission is active (managed by js/mission-manager.js) -->
+      <header id="mission-bar" hidden>
+        <div class="mission-bar-info">
+          <span id="mission-bar-name" class="mission-name"></span>
+          <span id="mission-bar-phase" class="badge"></span>
+        </div>
+        <div class="mission-bar-clock">
+          <span class="label">Mission clock (simulated)</span>
+          <span id="mission-bar-clock" class="mono">--:--:--</span>
+        </div>
+        <div class="mission-bar-actions">
+          <button id="btn-pause" class="btn" type="button" disabled>Pause Mission</button>
+          <button id="btn-end" class="btn btn-danger" type="button">End Mission</button>
+        </div>
+      </header>
+
+      <main id="sections">
+
+        <!-- 1. Mission View -->
+        <section id="section-mission-view" class="app-section" data-mode="welcome">
+          <div id="welcome-screen" class="mode-welcome">
+            <img id="welcome-image" class="welcome-bg" src="assets/images/welcome/welcome.jpg"
+                 alt="Surface of Mars photographed by a NASA rover">
+            <div class="welcome-overlay"></div>
+            <div class="welcome-content">
+              <h1 class="welcome-title">MAЯPS</h1>
+              <p class="welcome-subtitle">Mars Astronaut Route Planning &amp; Simulation</p>
+              <p class="welcome-tagline">Mission planning and exploration system — Acidalia Planitia</p>
+              <button id="btn-welcome-start" class="btn btn-primary btn-large" type="button">Start New Mission</button>
+            </div>
+            <p class="welcome-credit">Image: NASA photograph taken from the surface of Mars by a rover. It is used only as a welcome image and does not show Acidalia Planitia.</p>
+          </div>
+
+          <div id="pre-exploration-notice" class="mode-pre-exploration">
+            <div class="card notice-card">
+              <h2>Landing in progress</h2>
+              <p id="pre-exploration-text"></p>
+              <button id="btn-go-landing" class="btn btn-primary" type="button">Go to landing map</button>
+            </div>
+          </div>
+
+          <div id="mission-view-root" class="mode-exploration">
+            <p class="placeholder">The first-person exploration view is added in a later stage.</p>
+          </div>
+        </section>
+
+        <!-- 2. Map (the Leaflet map is loaded in an iframe inside #map-host by js/map-bridge.js) -->
+        <section id="section-map" class="app-section">
+          <div id="map-host">
+            <p class="placeholder">The interactive map is integrated in a later stage.</p>
+          </div>
+          <aside id="map-side-panel"></aside>
+        </section>
+
+        <!-- 3. Mission Log -->
+        <section id="section-mission-log" class="app-section">
+          <div id="log-root" class="section-pad">
+            <h2>Mission Log</h2>
+            <p class="placeholder">The mission log is added in a later stage.</p>
+          </div>
+        </section>
+
+        <!-- 4. Mission Archive -->
+        <section id="section-mission-archive" class="app-section">
+          <div id="archive-root" class="section-pad">
+            <h2>Mission Archive</h2>
+            <p class="placeholder">The mission archive is added in a later stage.</p>
+          </div>
+        </section>
+
+        <!-- 5. Mission Setup -->
+        <section id="section-mission-setup" class="app-section">
+          <div id="setup-root" class="section-pad"></div>
+        </section>
+
+      </main>
+    </div>
+  </div>
+
+  <div id="notifications" aria-live="polite"></div>
+  <div id="modal-root"></div>
+
+  <noscript>MAЯPS needs JavaScript to run.</noscript>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

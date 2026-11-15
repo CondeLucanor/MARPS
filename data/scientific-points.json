@@ -1,0 +1,85 @@
+{
+    "dataProvenance": "Locations and short descriptions based on published gazetteer values; the list of sites is a predefined mission dataset.",
+    "points": [
+      {
+        "id": "SCI_001",
+        "name": "Acidalia Planitia (central plain)",
+        "type": "plain",
+        "latitude": 49.8,
+        "longitude": 339.3,
+        "description": "Centre of the large, dark plain in Mars's northern lowlands. Very flat terrain, interpreted as a basin that collected sediment from the surrounding highlands. A reference site for the whole study region.",
+        "image": null,
+        "visited": false
+      },
+      {
+        "id": "SCI_002",
+        "name": "Acidalia Colles",
+        "type": "hill-cluster",
+        "latitude": 50.34,
+        "longitude": 336.91,
+        "description": "Cluster of small hills and knobs about 360 km long. Gullies have been observed on the hills.",
+        "image": null,
+        "visited": false
+      },
+      {
+        "id": "SCI_003",
+        "name": "Face on Mars (Cydonia mesa)",
+        "type": "mesa",
+        "latitude": 40.75,
+        "longitude": 350.54,
+        "description": "Roughly 2 km mesa that looked like a face in a 1976 Viking 1 image. Later, higher-resolution images show an ordinary eroded hill, a good example of how lighting can create false patterns.",
+        "image": null,
+        "visited": false
+      },
+      {
+        "id": "SCI_004",
+        "name": "Crater with candidate mud-volcano deposit",
+        "type": "crater",
+        "latitude": 38.0,
+        "longitude": 338.8,
+        "description": "Impact crater about 11.6 km across with a deposit on its south-western rim that some studies interpret as a possible mud volcano. The interpretation is a candidate, not a confirmed result.",
+        "image": null,
+        "visited": false
+      },
+      {
+        "id": "SCI_005",
+        "name": "Lomonosov Crater (southern rim)",
+        "type": "crater",
+        "latitude": 64.0,
+        "longitude": 350.8,
+        "description": "Rim area of Lomonosov Crater, a 153 km impact crater near the northern edge of the plain. The crater centre lies just beyond the study region, so this site is on its southern rim.",
+        "image": null,
+        "visited": false
+      },
+      {
+        "id": "SCI_006",
+        "name": "Kunowsky Crater",
+        "type": "crater",
+        "latitude": 57.1,
+        "longitude": 350.3,
+        "description": "Impact crater about 67 km across in the northern part of the plain.",
+        "image": null,
+        "visited": false
+      },
+      {
+        "id": "SCI_007",
+        "name": "Acidalia Mensa",
+        "type": "geological-feature",
+        "latitude": 46.69,
+        "longitude": 334.66,
+        "description": "Remnant mesa-like landform in the plain. Its margin has been interpreted as a possible ancient shoreline.",
+        "image": null,
+        "visited": false
+      },
+      {
+        "id": "SCI_008",
+        "name": "Bamberg Crater",
+        "type": "crater",
+        "latitude": 40.0,
+        "longitude": 356.8,
+        "description": "Impact crater about 58 km across near the highland-lowland transition. Gullies have been imaged on its walls.",
+        "image": null,
+        "visited": false
+      }
+    ]
+  }

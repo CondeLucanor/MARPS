@@ -1,0 +1,22 @@
+  html, body { margin: 0; height: 100%; font-family: system-ui, sans-serif; background: #1a0f0a; color: #f3e3d8; }
+  #app { display: flex; height: 100%; }
+  #sidebar { width: 300px; padding: 14px; box-sizing: border-box; overflow-y: auto; background: #241410; border-right: 1px solid #4a2a1c; }
+  #sidebar h1 { font-size: 1.2rem; margin: 0 0 10px; color: #ff9a6b; }
+  #search { width: 100%; padding: 8px; box-sizing: border-box; border-radius: 6px; border: 1px solid #5a3322; background: #1a0f0a; color: inherit; }
+  .filters { margin: 12px 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .filters label { font-size: .85rem; background: #35201a; padding: 4px 8px; border-radius: 12px; cursor: pointer; }
+  #list { list-style: none; padding: 0; margin: 0; }
+  #list li { padding: 8px; border-radius: 6px; cursor: pointer; font-size: .9rem; }
+  #list li:hover { background: #35201a; }
+  #list small { color: #c59d88; display: block; }
+  #map { flex: 1; background: #3a1d12; }
+  #coords { position: absolute; bottom: 10px; right: 10px; z-index: 1000; background: rgba(20,10,6,.85);
+            padding: 4px 10px; border-radius: 6px; font-size: .85rem; pointer-events: none; }
+  #notice { position: absolute; top: 10px; left: 320px; z-index: 1000; background: #7a2a12; padding: 6px 12px;
+            border-radius: 6px; font-size: .85rem; display: none; }
+  .leaflet-popup-content h3 { margin: 0 0 4px; }
+  @media (max-width: 700px) {
+    #app { flex-direction: column-reverse; }
+    #sidebar { width: auto; height: 38%; border-right: 0; border-top: 1px solid #4a2a1c; }
+    #notice { left: 10px; }
+  }
